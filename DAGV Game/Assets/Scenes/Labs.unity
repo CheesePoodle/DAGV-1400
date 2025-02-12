@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 84521989}
   - component: {fileID: 84521988}
   m_Layer: 0
-  m_Name: Idle (32x32)_0
+  m_Name: FroggyArt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

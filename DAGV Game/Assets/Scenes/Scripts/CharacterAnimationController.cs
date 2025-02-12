@@ -31,16 +31,19 @@ public class CharacterAnimationController : MonoBehaviour
             animator.SetTrigger("IdleTrigger");
         }
 
+        //jump button
         if (Input.GetButtonDown("Jump"))
         {
-            animator.SetTrigger("DoubleJumpTrigger");
+            animator.SetTrigger("JumpTrigger");
         }
 
+        //damage animation
         if (Input.GetKeyDown(KeyCode.H))
         {
             animator.SetTrigger("HitTrigger");
         }
 
+        //fall animation
         if (Input.GetKeyDown(KeyCode.F))
         {
             animator.SetTrigger("FallTrigger");
