@@ -50,9 +50,9 @@ public class CharacterAnimationController : MonoBehaviour
         }
 
         //wall jumping
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.J))
         {
-            animator.SetTrigger("Wall Jump");
+            animator.SetTrigger("WallJumpTrigger");
         }
     }
 }
