@@ -5,11 +5,13 @@ using UnityEngine;
 public class CharacterAnimationController : MonoBehaviour
 {
     private Animator animator;
+    
     // Start is called before the first frame update
     private void Start()
     {
         //Cache the animator component attached to CharacterArt
         animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -37,12 +39,6 @@ public class CharacterAnimationController : MonoBehaviour
             animator.SetTrigger("JumpTrigger");
         }
 
-        //damage animation
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            animator.SetTrigger("HitTrigger");
-        }
-
         //fall animation
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -54,5 +50,7 @@ public class CharacterAnimationController : MonoBehaviour
         {
             animator.SetTrigger("WallJumpTrigger");
         }
+
+        
     }
 }
