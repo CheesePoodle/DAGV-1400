@@ -65,4 +65,15 @@ public class SimpleCharacterController : MonoBehaviour
         
         thisTransform.position = currentPosition;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Collectible")
+        {
+            Destroy(other.gameObject);
+        } else if(other.gameObject.tag == "HealthObject")
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }

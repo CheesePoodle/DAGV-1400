@@ -9,9 +9,21 @@ public class SimpleTriggerEventBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.tag == "Player")
+        {
+            Debug.Log("Player touched the guy!");
+            triggerEvent.Invoke();
+            if (other.gameObject.tag == "Collectible")
+            {
+                Destroy(other.gameObject);
+            }
+            else if (other.gameObject.tag == "HealthObject")
+            {
+                Destroy(other.gameObject);
+            }
+        }
         //trigger the event and test with a debug message
-        Debug.Log("Player touched the guy!");
-        triggerEvent.Invoke();
+        
     }
 
 }
