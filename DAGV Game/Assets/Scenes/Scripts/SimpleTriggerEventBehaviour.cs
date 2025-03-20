@@ -13,14 +13,7 @@ public class SimpleTriggerEventBehaviour : MonoBehaviour
         {
             Debug.Log("Player touched the guy!");
             triggerEvent.Invoke();
-            if (other.gameObject.tag == "Collectible")
-            {
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.tag == "HealthObject")
-            {
-                Destroy(other.gameObject);
-            }
+            
         }
         //trigger the event and test with a debug message
         

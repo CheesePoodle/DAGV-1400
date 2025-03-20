@@ -23,5 +23,6 @@ public class SimpleTextMeshProBehaviour : MonoBehaviour
     void UpdateWithIntData()
     {
         textObj.text = "Score: " + dataObj.value.ToString(CultureInfo.InvariantCulture);
+        
     }
 }
