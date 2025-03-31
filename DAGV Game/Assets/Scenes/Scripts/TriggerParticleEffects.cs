@@ -5,7 +5,10 @@ using UnityEngine;
 public class TriggerParticleEffects : MonoBehaviour
 {
     private ParticleSystem particleSystem; //Ref to the particle system
-    public int particleAmount = 10; //Exposed variable for particle amt
+    public int firstEmissionAmt = 10;
+    public int secondEmissionAmt = 20;
+    public int thirdEmissionAmt = 30;
+    public float delayBetweenEmissions = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +19,17 @@ public class TriggerParticleEffects : MonoBehaviour
     {
         if (other.gameObject.tag == "Player") //check if player triggered event
         {
-            particleSystem.Emit(particleAmount); //emit specified amt of particles
+            StartCoroutine(EmitParticlesCoroutine());
         }
+    }
+
+    private IEnumerator EmitParticlesCoroutine()
+    {
+        particleSystem.Emit(firstEmissionAmt);
+        yield return new WaitForSeconds(delayBetweenEmissions);
+        particleSystem.Emit(secondEmissionAmt);
+        yield return new WaitForSeconds(delayBetweenEmissions);
+        particleSystem.Emit(thirdEmissionAmt);
+        yield return new WaitForSeconds(delayBetweenEmissions);
     }
 }

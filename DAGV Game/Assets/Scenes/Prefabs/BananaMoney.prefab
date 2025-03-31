@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3368990512810979702}
   - component: {fileID: 5723532914073738860}
   - component: {fileID: 4846333623221964084}
-  - component: {fileID: 2702024895606821723}
+  - component: {fileID: 5781856117801076993}
   - component: {fileID: 2571285905954315407}
   m_Layer: 0
   m_Name: BananaMoney
@@ -254,7 +254,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2d0d3c5f5cd9a04ab36143926d3ffc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleAmount: 10
+  firstEmissionAmt: 10
+  secondEmissionAmt: 20
+  thirdEmissionAmt: 30
+  delayBetweenEmissions: 0.5
 --- !u!114 &4846333623221964084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,7 +297,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!198 &2702024895606821723
+--- !u!198 &5781856117801076993
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -311,7 +314,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -377,7 +380,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -548,7 +551,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 0.05
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -865,7 +868,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -1131,7 +1134,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
