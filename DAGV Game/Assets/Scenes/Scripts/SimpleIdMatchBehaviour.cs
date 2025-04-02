@@ -16,7 +16,8 @@ public class SimpleIdMatchBehaviour : MonoBehaviour
         {
             matchEvent.Invoke();
             Debug.Log("Matched ID: " + id);
-        } else
+        } 
+        else
         {
             noMatchEvent.Invoke();
             Debug.Log("No match: " + id);
