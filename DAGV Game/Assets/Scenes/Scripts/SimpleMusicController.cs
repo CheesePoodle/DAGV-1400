@@ -6,18 +6,11 @@ using UnityEngine;
 public class SimpleMusicController : MonoBehaviour
 {
     private AudioSource Music;
-    public SimpleFloatData volume;
     // Start is called before the first frame update
     void Start()
     {
         Music.Play();
-        Music.volume = 0.5F;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Music.volume = volume.value;
+        Music.volume = 0.5f;
     }
 
     void PauseMusic()

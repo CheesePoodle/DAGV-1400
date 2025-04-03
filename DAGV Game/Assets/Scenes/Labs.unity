@@ -784,6 +784,18 @@ MonoBehaviour:
           m_StringArgument: TriggerOff
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 924544489}
+        m_TargetAssemblyTypeName: AttachOnTrigger, Assembly-CSharp
+        m_MethodName: OnTriggerExit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 279114962}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Collider, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TriggerOff
+          m_BoolArgument: 0
+        m_CallState: 2
   noMatchEvent:
     m_PersistentCalls:
       m_Calls:
@@ -6416,6 +6428,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5300064981579407198, guid: 9aa9cb7fc5b17724798bef501d8b08d0, type: 3}
   m_PrefabInstance: {fileID: 4238670602414438270}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &924544489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2026519883920885250, guid: 9aa9cb7fc5b17724798bef501d8b08d0, type: 3}
+  m_PrefabInstance: {fileID: 4238670602414438270}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924544484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe3f778d5451fc44b77c0e748d7dd4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &924544493
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6584,7 +6607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab93c54fe3580c74c9db15b05244ab45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: {fileID: 11400000, guid: e0150084469895046b6271ab0e856cf2, type: 2}
 --- !u!1001 &971998638
 PrefabInstance:
   m_ObjectHideFlags: 0

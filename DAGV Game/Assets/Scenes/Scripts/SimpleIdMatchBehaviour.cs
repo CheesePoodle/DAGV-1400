@@ -15,12 +15,11 @@ public class SimpleIdMatchBehaviour : MonoBehaviour
         if(otherId.id == id)
         {
             matchEvent.Invoke();
-            Debug.Log("Matched ID: " + id);
+            Destroy(other.gameObject); //Fire turns off, key is destroyed, and the player can continue through the level.
         } 
         else
         {
-            noMatchEvent.Invoke();
-            Debug.Log("No match: " + id);
+            noMatchEvent.Invoke(); //Fire animation continues
         }
     }
 }
