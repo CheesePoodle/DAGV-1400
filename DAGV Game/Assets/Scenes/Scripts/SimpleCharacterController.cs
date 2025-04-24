@@ -70,10 +70,7 @@ public class SimpleCharacterController : MonoBehaviour
     {
         if(other.gameObject.tag == "Collectible")
         {
-            Destroy(other.gameObject, 1);
-        } else if(other.gameObject.tag == "HealthObject")
-        {
-            Destroy(other.gameObject, 1);
+            Destroy(other.gameObject);
         }
     }
 }

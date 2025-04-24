@@ -12,9 +12,10 @@ public class SimpleIdMatchBehaviour : MonoBehaviour
     {
         var otherId = other.GetComponent<SimpleIdBehaviour>();
 
-        if(otherId.id == id)
+        if (otherId.id == id)
         {
             matchEvent.Invoke();
+            Debug.Log("Key is a match");
             Destroy(other.gameObject); //Fire turns off, key is destroyed, and the player can continue through the level.
         } 
         else

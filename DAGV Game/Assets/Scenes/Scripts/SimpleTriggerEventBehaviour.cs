@@ -11,7 +11,7 @@ public class SimpleTriggerEventBehaviour : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("Player touched the guy!");
+            Debug.Log("event triggered");
             triggerEvent.Invoke();
             
         }

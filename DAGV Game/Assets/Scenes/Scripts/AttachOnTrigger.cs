@@ -6,6 +6,7 @@ public class AttachOnTrigger : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Event Triggered");
          transform.parent = other.transform;
     }
 
